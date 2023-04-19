@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data type</title>
+</head>
+<body>
+
+    <!-- at a high level there are two types of data types in javascript
+    1. primitive data type(String ,boolean,number,undefined,null,symbol)
+    2. refrence data type(array,objects) -->
+
+   <script>
+    //    data type in java script
+    // 1.numbers
+    var num1=30;
+    var num2=40;
+    console.log(num1+num2)
+
+    // 2.string
+    var str1 = "this is a double string"
+    var str2 = 'this is a single string'
+    console.log(str1)
+    console.log(str2)
+
+   
+
+    // 3.booleans
+    const a = true;
+    const b = false;
+    console.log(a,b);
+
+    // 4.undefined
+    var und = undefined;
+    console.log(und)
+        //  we can also write
+    var und;
+    console.log(und)
+
+    // 5.null
+    let n = null;
+    console.log(n)
+
+
+    
+    // 1.objects
+    let marks={
+        kitty:99,
+        lucky: 49
+    }
+    console.log(marks)
+
+    // 2.array
+    let arr = [1,2,3,4,34.6,"kitty"];
+    // console.log(arr)
+
+
+//   string
+    console.log(typeof '')//single quote
+    console.log(typeof "")//double quote
+    console.log(typeof ``)//backtik
+    console.log(typeof '2')
+    console.log(typeof 'ab')
+    console.log(typeof '^&')
+    console.log(typeof "2")
+    console.log(typeof "ab")
+    console.log(typeof "^&")
+    console.log(typeof `2`)
+    console.log(typeof `ab`)
+    console.log(typeof `^&`)
+
+       // var name = 'name is aks'
+      // var name = "name is aks"
+      let name = `name is kity`; //string
+       name = 1 //number
+       name = 1.2 //number
+       name = true //boolean
+       name = false //boolean
+       name = undefined //undefined
+       name = null //object
+       name = [] // object
+       name = {} //object
+       name = new Object() //object
+       name = function(){} //function
+       name = Symbol; //function
+       name = BigInt; //function
+       name = Object //function
+
+      console.log(typeof name);
+
+    </script>
+</body>
+</html>
