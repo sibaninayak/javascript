@@ -94,13 +94,13 @@
 // }
 // user()
 
-// function Params(){
-//     //  console.log({p1,p2,p3,p4,p5,p6,p7})  //total argument
-//     //  console.log(arguments.length)
+function Params(p1,p2,p3,p4,p5,p6,p7){
+     console.log({p1,p2,p3,p4,p5,p6,p7})  //total argument
+     console.log(arguments.length)
 
-//     //  for(i=0;i<arguments.length;i++){
-//     //     console.log(arguments[i])
-//     //  }
+    //  for(i=0;i<arguments.length;i++){
+    //     console.log(arguments[i])
+    //  }
 //     let arr = [];
 
 //      //?new loop for object and array {for....of}
@@ -109,13 +109,13 @@
 //         arr.push(values)  //if we make a array nd pushh then it will print all the arguments without param also
 //      }
 //      console.log(arr)
-// }
-// Params("Rm","jin","yoongi","hobi","jimin","v",'Jk')
+}
+Params("Rm","jin","yoongi","hobi","jimin","v",'Jk')
 
-function RestParams(p1,...rest){
+// function RestParams(p1,...rest){
     // function RestParams(p1,...BTS){
     //     //?in place of rest we can write any namee but we have to give ...dots
-    console.log({p1,rest});  //total argument
+    // console.log({p1,rest});  //total argument
     // console.log(arguments.length)
 
     // console.log(typeof rest)
@@ -129,8 +129,8 @@ function RestParams(p1,...rest){
    //  }
 
     //?new loop for object and array {for....of}
-    for(values of rest){
-       console.log(values)
-    }
-}
-RestParams("Rm","jin","yoongi","hobi","jimin","v",'Jk')
+//    for(values of rest){
+//        console.log(values)
+//     }
+// }
+// RestParams("Rm","jin","yoongi","hobi","jimin","v",'Jk') 
