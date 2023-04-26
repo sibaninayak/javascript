@@ -51,23 +51,23 @@ const heading = document.getElementById("heading");
 // console.log(typeof undefined)
 
 // ?methods and properties
-let obj = {
-    name:'kitty',//property
-    function(){}//method
-}
+// let obj = {
+//     name:'kitty',//property
+//     function(){}//method
+// }
 
-let obj1 = new Object()
+// let obj1 = new Object()
 
-console.log(typeof obj)
-console.log(typeof obj1)
+// console.log(typeof obj)
+// console.log(typeof obj1)
 
-let arr = [];
-let arr1 = {};
-console.log(Array.isArray(arr))
-// console.log(_.isArray(arr))
-console.log(Array.isArray(arr1))
+// let arr = [];
+// let arr1 = {};
+// console.log(Array.isArray(arr))
+// // console.log(_.isArray(arr))
+// console.log(Array.isArray(arr1))
 
-/ console.log(arr.length)
+// console.log(arr.length)
 // console.log(arr)
 // console.log(arr.push('ashok'))
 // console.log(arr)
@@ -139,5 +139,135 @@ console.log(Array.isArray(arr1))
 
 // console.log(arr)
 // console.log(arr.fill(8))
+
+const arr = [9,6,8,3,0,1,5]
+console.log(arr)
+
+// console.log(arr.sort())
+// console.log(arr.sort(function(a,b){
+//     return a-b
+// }))
+// console.log(arr.sort(function(a,b){
+//     return b-a
+// }))
+
+let arr2 = [
+    {
+        id:1,
+        name:"kitty",
+        age:18
+    },
+    {
+        id:2,
+        name:"sibani",
+        age:20
+    },
+    {
+       id:3,
+       name:"lucky",
+       age:25
+    }
+]
+// console.log({arr2});
+// console.log(arr2.map((value,index,arr)=>value))
+// console.log(arr2.map((value,index,arr)=>index))
+// console.log(arr2.map((value,index,arr)=>arr))
+
+console.log(arr2.map(function(value,index,arr) {
+    return value.name
+}))
+
+function callback(value,index,arr){
+    return value.age
+}
+console.log(arr2.map(callback));
+
+let items = [
+    {
+        img: "no img",
+        Totalrating: 4.3,
+        rating :11,
+        review:6,
+        price :2999,
+        specification:{
+                Brand:"BoAt",
+                Model_Name:"Rockerz 551ANC",
+                Colour:"Sage Green",
+                Headphones_form :"On Ear",
+                Connector_Type :"Bluetooth",
+                Special_Feature:"Active Noise Cancellation, Ambient Sound Mode, Up to 100H Playtime, ASAP™ Charge",
+                Mounting_Hardware:"User Manual, Warranty Card, Charging Cable, Rockerz 551ANC",
+                Age_Range :"adult",
+                Noise_Control:	"Active Noise Cancellation",
+                Ear_Placement:	"On Ear"
+        },
+   },
+   {
+    img: "no img",
+    Totalrating: 2.7,
+    rating :11,
+    review:6,
+    price :1500,
+    specification:{
+            Brand:"BoAt",
+            Model_Name:"Rockerz 551ANC",
+            Colour:"red",
+            Headphones_form :"On Ear",
+            Connector_Type :"Bluetooth",
+            Special_Feature:"Active Noise Cancellation, Ambient Sound Mode, Up to 100H Playtime, ASAP™ Charge",
+            Mounting_Hardware:"User Manual, Warranty Card, Charging Cable, Rockerz 551ANC",
+            Age_Range :"adult",
+            Noise_Control:	"Active Noise Cancellation",
+            Ear_Placement:	"On Ear"
+    },
+},
+{
+    img: "no img",
+    Totalrating: 3.9,
+    rating :11,
+    review:6,
+    price :3999,
+    specification:{
+            Brand:"BoAt",
+            Model_Name:"Rockerz 551ANC",
+            Colour:"purple",
+            Headphones_form :"On Ear",
+            Connector_Type :"Bluetooth",
+            Special_Feature:"Active Noise Cancellation, Ambient Sound Mode, Up to 100H Playtime, ASAP™ Charge",
+            Mounting_Hardware:"User Manual, Warranty Card, Charging Cable, Rockerz 551ANC",
+            Age_Range :"adult",
+            Noise_Control:	"Active Noise Cancellation",
+            Ear_Placement:	"On Ear"
+    },
+},
+];
+console.log({items})
+console.log(items.filter((elm)=>{
+    return elm.Totalrating < 4
+}))
+console.log(items.filter((elm)=>{
+    return elm.price < 3000
+}))
+// console.log(_.map(items,(elm)=>{
+//     return elm.price < 3000
+// })
+// console.log(
+//     items.filter((elm) => {
+//       return elm.price > 2000;
+//     })
+//   );
+  
+//   console.log(
+//     _.filter(items, (elm) => {
+//       return elm.price > 2000;
+//     })
+//   );
+  
+//   console.log(
+//     _.filter(items, (elm) => {
+//       return elm.Totalrating < 3;
+//     })
+//   );
+
 
 

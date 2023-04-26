@@ -83,5 +83,24 @@ const [a,...b]=array  //?spread operator
 console.log(b1,b2,b3,b4,b5)
 console.log({a,b})
 
+//? callback function
+const arg = (x) => {
+    return x + 3
+};
+const arrow = (fn) => {
+    return fn*3
+};
+// console.log(arrow(3))
+console.log(arrow(arg(15)))
+
+//? curry function
+function fn(a) {
+    return function (b) {
+        return function (c) {
+            return a*b*c;
+        }
+    }
+};
+console.log(fn(5)(7)(10))
 
 
